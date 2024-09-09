@@ -94,8 +94,7 @@ if 'generated_tag' in st.session_state:
         # Pilih berapa banyak kata yang ingin dihasilkan
         n_words_to_generate = st.number_input("Berapa banyak kata yang ingin dihasilkan?", min_value=1, max_value=100, value=10, step=1)
 
-        # Input start token sesuai dengan n-gram
-        start_token_input = st.text_input(f"Masukkan {n} token awal (dipisahkan oleh spasi)").split()
+        start_token_input = st.text_input(f"Masukkan {n} token awal (dipisahkan oleh spasi)").lower().split()
 
         # Validasi jumlah token yang diinput
         if len(start_token_input) != n:
