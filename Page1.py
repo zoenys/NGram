@@ -3,10 +3,10 @@ import pandas as pd
 from collections import Counter
 import ast
 
-st.image("C:/Data/SCHOOL_NEW/1 U N A I R/5  S E M E S T E R 5/NLP/P R O Y E K M3 NGRAM/env/images/QUOTE.png", use_column_width=True)
+st.image("/images/QUOTE.png", use_column_width=True)
 
 # Membaca CSV dari path yang kamu berikan
-df = pd.read_csv('C:/Data/SCHOOL_NEW/1 U N A I R/5  S E M E S T E R 5/NLP/P R O Y E K M3 NGRAM/env/new_tokenized.csv')
+df = pd.read_csv('pages/new_tokenized.csv')
 
 # Konversi string list di kolom tokenized_quote dan tags ke list yang sesungguhnya
 df['tokenized_quote'] = df['tokenized_quote'].apply(ast.literal_eval)
