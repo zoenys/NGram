@@ -69,7 +69,7 @@ def autocomplete_page():
     st.title("Cari Tags untuk Mendapatkan Quotes💬")
 
     # Input text dari pengguna
-    input_text = st.text_input("Mulai mengetik tag:", "")
+    input_text = st.text_input("Mulai mengetik tag:", "").lower()
 
     # Pilihan n-gram
     n_gram_size = st.selectbox("Pilih ukuran n-gram", [2, 3, 4, 5])
