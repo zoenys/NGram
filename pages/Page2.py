@@ -70,7 +70,7 @@ def calculate_perplexity(text_tokens, ngram_probs, n):
     except ZeroDivisionError:
         return '-'  # Jika ada pembagian dengan nol, tampilkan '-'
 
-df = pd.read_csv('new_tokenized.csv')
+df = pd.read_csv('pages/new_tokenized.csv')
 
 # Konversi string list ke list yang sesungguhnya
 df['tokenized_quote'] = df['tokenized_quote'].apply(ast.literal_eval)
