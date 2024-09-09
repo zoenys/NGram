@@ -3,7 +3,7 @@ import pandas as pd
 from collections import Counter
 import ast
 
-st.image("/images/QUOTE.png", use_column_width=True)
+st.image("images/QUOTE.png", use_column_width=True)
 
 # Membaca CSV dari path yang kamu berikan
 df = pd.read_csv('pages/new_tokenized.csv')
